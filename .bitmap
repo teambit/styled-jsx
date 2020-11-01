@@ -286,11 +286,6 @@
                 "test": false
             },
             {
-                "name": "container.module.scss",
-                "relativePath": "container.module.scss",
-                "test": false
-            },
-            {
                 "name": "container.tsx",
                 "relativePath": "container.tsx",
                 "test": false
