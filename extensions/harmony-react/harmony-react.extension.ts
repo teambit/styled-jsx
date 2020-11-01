@@ -14,7 +14,8 @@ export class HarmonyReactExtension {
     const babelCompiler = babel.createCompiler({ babelTransformOptions: babelConfig });
 
     const harmonyReactEnv = react.compose([
-      react.overrideCompiler(babelCompiler)
+      react.overrideCompiler(babelCompiler),
+      react.overrideCompilerTasks([babelCompiler.createTask()])
       // react.overrideTsConfig(tsconfig),
       // react.overrideJestConfig(require.resolve('./jest/jest.config')),
       // react.overrideDevServerConfig(webpackConfig),
