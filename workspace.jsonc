@@ -29,7 +29,7 @@
        * For example, library will be devDependency when the file that imports it is a test file.
        **/
       "dependencies": {
-
+        "@babel/preset-typescript": "7.12.1",
         "@teambit/documenter.code.react-playground": "0.1.1",
         "@teambit/documenter.theme.theme-context": "0.1.1",
         "@teambit/documenter.ui.code-snippet": "^0.1.1",
@@ -45,7 +45,7 @@
         "classnames": "^2.2.6",
         "styled-jsx-plugin-sass": "1.0.0"
       },
-      "devDependencies":{
+      "devDependencies": {
         "node-sass": "4.14.1"
       },
       "peerDependencies": {

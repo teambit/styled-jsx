@@ -145,11 +145,6 @@
                 "test": false
             },
             {
-                "name": "bad-jokes-viewer.module.scss",
-                "relativePath": "bad-jokes-viewer.module.scss",
-                "test": false
-            },
-            {
                 "name": "bad-jokes-viewer.tsx",
                 "relativePath": "bad-jokes-viewer.tsx",
                 "test": false
@@ -205,11 +200,6 @@
             {
                 "name": "app-bar.docs.tsx",
                 "relativePath": "app-bar.docs.tsx",
-                "test": false
-            },
-            {
-                "name": "app-bar.module.scss",
-                "relativePath": "app-bar.module.scss",
                 "test": false
             },
             {
@@ -297,5 +287,5 @@
         "exported": false,
         "lanes": []
     },
-    "version": "14.8.9-dev.108"
+    "version": "14.8.9-dev.114"
 }
