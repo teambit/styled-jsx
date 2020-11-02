@@ -44,10 +44,12 @@
         "@types/classnames": "^2.2.10",
         "classnames": "^2.2.6"
       },
+      "devDependencies":{
+        "node-sass": "4.14.1"
+      },
       "peerDependencies": {
         "react": "^16.13.1",
-        "styled-jsx": "3.3.1",
-        "node-sass": "4.14.1"
+        "styled-jsx": "3.3.1"
       }
     }
   },
@@ -66,7 +68,8 @@
             "styled-jsx": "3.3.1",
             "@babel/preset-react": "7.12.1",
             "@babel/preset-flow": "7.12.1",
-            "@babel/plugin-syntax-class-properties": "7.12.1"
+            "@babel/plugin-syntax-class-properties": "7.12.1",
+            "node-sass": "4.14.1"
           }
         }
       }
