@@ -13,6 +13,10 @@ export type ContainerProps = {
 export const Container = ({className, children, floatEffect = true} : ContainerProps) => {
     return(
     <div>
+        <style jsx global>{`
+            @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+        `}
+        </style>
         <style jsx>{`
           .container {
             border: solid 7px #41403e;

@@ -1,5 +1,4 @@
 import React, { ReactNode, useState } from 'react';
-import styles from './app-bar.module.scss';
 
 export type AppBarProps = {
   /** App-bar items -  each consists of a label and an action to execute when selected. */
@@ -21,19 +20,61 @@ export const AppBar = ({ items, children, defaultItem, ...rest } : AppBarProps) 
   };
 
   return (
-    <div className={styles.appBar} {...rest}>
-      <ul>
-        {items.map(item => (
-          <li
-            key={Math.random()}
-            className={selectedItem === item.label ? styles.selected : undefined}
-            onClick={e => handleItemClick(e, item.action)}
-          >
-            {item.label}
-          </li>
-        ))}
-        {children && <div className={styles.logo}>{children}</div>}
-      </ul>
+    <div>
+      <style jsx>{`
+          $breakpoint-sm: 600px;
+
+          .appBar {
+            display: block;
+            border-radius: 0 0 225px 15Array/0Array 0 15px 255px;
+            border-bottom: solid 3px #41403e;
+            border-left: solid rgba(0, 0, 0, 0);
+            margin-left: 10px;
+            margin-right: 26px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            font-family: 'Indie Flower', cursive;
+            font-size: 24px;
+          }
+          .appBar ul {
+            padding: 0;
+            margin: 0;
+          }
+          .appBar ul li {
+            display: inline;
+            text-decoration: unset;
+            color: #000;
+            margin-right: 35px;
+            cursor: pointer;
+          }
+          .appBar ul li:hover {
+            color: #ab3636;
+          }
+          .appBar ul .selected:after {
+            content: ']';
+          }
+          .appBar ul .selected:before {
+            content: '[';
+          }
+          .appBar .logo {
+            float: right;
+          }
+      `}
+      </style>
+      <div className={'appBar'} {...rest}>
+        <ul>
+          {items.map(item => (
+            <li
+              key={Math.random()}
+              className={selectedItem === item.label ? 'selected' : undefined}
+              onClick={e => handleItemClick(e, item.action)}
+            >
+              {item.label}
+            </li>
+          ))}
+          {children && <div className={'logo'}>{children}</div>}
+        </ul>
+      </div>
     </div>
   );
 };

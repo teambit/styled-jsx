@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import styles from './bad-jokes-viewer.module.scss';
 import { Button } from '@teambit/bad-jokes.ui-primitives.button';
 import { useJokes } from '@teambit/bad-jokes.hooks.use-jokes';
 import { Container } from '@teambit/bad-jokes.ui-primitives.container';
@@ -23,9 +22,25 @@ export const BadJokesViewer = ({ local, className }: BadJokesProps) => {
   }, [local]);
 
   return (
-    <Container className={styles.minWidth}>
-      <div className={styles.contentWrapper}>{error || renderJoke(joke)}</div>
-      <div className={styles.buttonsWrapper}>
+    <Container className={'minWidth'}>
+      <style jsx>{`
+        .contentWrapper {
+          margin-bottom: 50px;
+        }
+
+        .buttonsWrapper {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .minWidth {
+          min-width: 450px;
+        }
+      `}
+
+      </style>
+      <div className={'contentWrapper'}>{error || renderJoke(joke)}</div>
+      <div className={'buttonsWrapper'}>
         <Button disabled={disableGetJoke} onClick={getJoke}>
           {disableGetJoke ? 'loading...' : 'another one, please'}
         </Button>
