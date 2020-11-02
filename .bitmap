@@ -242,11 +242,6 @@
                 "test": false
             },
             {
-                "name": "button.module.scss",
-                "relativePath": "button.module.scss",
-                "test": false
-            },
-            {
                 "name": "button.spec.jsx",
                 "relativePath": "button.spec.jsx",
                 "test": false
@@ -302,5 +297,5 @@
         "exported": false,
         "lanes": []
     },
-    "version": "14.8.9-dev.105"
+    "version": "14.8.9-dev.108"
 }
