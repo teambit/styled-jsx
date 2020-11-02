@@ -29,7 +29,7 @@
        * For example, library will be devDependency when the file that imports it is a test file.
        **/
       "dependencies": {
-        "@babel/preset-flow": "7.12.1",
+
         "@teambit/documenter.code.react-playground": "0.1.1",
         "@teambit/documenter.theme.theme-context": "0.1.1",
         "@teambit/documenter.ui.code-snippet": "^0.1.1",
@@ -42,8 +42,7 @@
         "@testing-library/jest-dom": "^5.11.3",
         "@testing-library/react": "10.4.8",
         "@types/classnames": "^2.2.10",
-        "classnames": "^2.2.6",
-        "styled-jsx-plugin-sass": "1.0.0"
+        "classnames": "^2.2.6"
       },
       "peerDependencies": {
         "react": "^16.13.1",
@@ -59,7 +58,18 @@
    **/
   "teambit.workspace/variants": {
     "extensions": {
-      "teambit.harmony/aspect": {}
+      "teambit.harmony/aspect": {},
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {
+          "dependencies": {
+            "styled-jsx-plugin-sass": "1.0.0",
+            "styled-jsx": "3.3.1",
+            "@babel/preset-react": "7.12.1",
+            "@babel/preset-flow": "7.12.1",
+            "@babel/plugin-syntax-class-properties": "7.12.1"
+          }
+        }
+      }
     },
     /**
      * configure all components under directory `components/react`
