@@ -1,5 +1,4 @@
 {
-  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   "teambit.workspace/workspace": {
     /**
      * name of the component workspace. used for development purposes.
@@ -62,9 +61,9 @@
    * new set of dependencies.
    **/
   "teambit.workspace/variants": {
-    // "extensions": {
-    //   "teambit.bit/aspect": {}
-    // },
+    "extensions": {
+      "teambit.harmony/aspect": {}
+    },
     /**
      * configure all components under directory `components/react`
      **/
