@@ -24,34 +24,35 @@
      * it helps to automate and manage dependency configuration for components.
      **/
     "policy": {
-      /**
+            /**
        * Dependency type is defined by the file that import it.
        * For example, library will be devDependency when the file that imports it is a test file.
        **/
       "dependencies": {
         "@babel/preset-typescript": "7.12.1",
-        "@teambit/documenter.code.react-playground": "0.1.1",
-        "@teambit/documenter.theme.theme-context": "0.1.1",
-        "@teambit/documenter.ui.code-snippet": "^0.1.1",
-        "@teambit/documenter.ui.highlighted-text": "0.1.1",
-        "@teambit/documenter.ui.linked-heading": "0.1.1",
-        "@teambit/documenter.ui.list": "0.1.1",
-        "@teambit/documenter.ui.paragraph": "0.1.1",
-        "@teambit/documenter.ui.section": "0.1.1",
-        "@teambit/documenter.ui.separator": "0.1.1",
+        "@bit/bit.bit-examples.helpers.enzyme-adapter-helper": "0.0.1",
+        "@teambit/documenter.code.react-playground": "^0.2.1",
+        "@teambit/documenter.theme.theme-context": "^0.2.1",
+        "@teambit/documenter.ui.code-snippet": "^0.2.1",
+        "@teambit/documenter.ui.highlighted-text": "^0.2.1",
+        "@teambit/documenter.ui.linked-heading": "^0.2.1",
+        "@teambit/documenter.ui.list": "^0.2.1",
+        "@teambit/documenter.ui.paragraph": "^0.2.1",
+        "@teambit/documenter.ui.section": "^0.2.1",
+        "@teambit/documenter.ui.separator": "^0.2.1",
         "@testing-library/jest-dom": "^5.11.3",
         "@testing-library/react": "10.4.8",
         "@types/classnames": "^2.2.10",
+        "@types/styled-jsx": "2.2.8",
         "classnames": "^2.2.6",
+        "react-test-renderer": "17.0.1",
         "styled-jsx-plugin-sass": "1.0.0"
       },
-      "devDependencies": {
-        "node-sass": "4.14.1"
-      },
       "peerDependencies": {
+        "node-sass": "4.14.1",
         "react": "^16.13.1",
-        "styled-jsx": "3.3.1",
-        "node-sass": "4.14.1"
+        "react-dom": "^16.13.1",
+        "styled-jsx": "3.3.1"
       }
     }
   },
@@ -68,6 +69,7 @@
           "dependencies": {
             "styled-jsx-plugin-sass": "1.0.0",
             "styled-jsx": "3.3.1",
+            "@babel/core": "7.12.3",
             "@babel/preset-react": "7.12.1",
             "@babel/preset-flow": "7.12.1",
             "@babel/plugin-syntax-class-properties": "7.12.1",
