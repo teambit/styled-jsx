@@ -2,6 +2,6 @@
   "name": "bad-jokes-workspace-styled-jsx-variant",
   "version": "1.0.0",
   "scripts":{
-    "postUpdate": "rm -rf node_modules && bbit install && bbit compile && bbit status"
+    "postUpdate": "rm -rf node_modules && bbit install && bbit compile && bbit compile && bbit status"
   }
 }
