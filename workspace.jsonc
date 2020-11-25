@@ -30,7 +30,6 @@
        **/
       "dependencies": {
         "@babel/preset-typescript": "7.12.1",
-        "@bit/bit.bit-examples.helpers.enzyme-adapter-helper": "0.0.1",
         "@teambit/documenter.code.react-playground": "^0.2.1",
         "@teambit/documenter.theme.theme-context": "^0.2.1",
         "@teambit/documenter.ui.code-snippet": "^0.2.1",
@@ -53,6 +52,9 @@
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "styled-jsx": "3.3.1"
+      },
+      "devDependencies":{
+        "@types/styled-jsx": "2.2.8"
       }
     }
   },
@@ -85,7 +87,14 @@
       /**
        * configure the react environment on all components under the react directory.
        */
-      "teambit.bad-jokes/extensions/harmony-react": {}
+      "teambit.bad-jokes/extensions/harmony-react": {},
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {
+          "devDependencies":{
+            "@types/styled-jsx": "2.2.8"
+          }
+        }
+      }
     },
     /**
      * configure all components under directory `components/modules`
